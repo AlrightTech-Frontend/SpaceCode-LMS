@@ -1,0 +1,116 @@
+
+.courses{
+  display: flex;
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
+  overflow-x: auto;
+
+}
+
+.courses .course {
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 0.313rem;
+  margin-bottom: 3.125rem;
+  margin-right: 1.25rem;
+  line-height: 1.25rem;
+  min-width: 20%;
+
+ 
+  
+}
+
+
+.container {
+  padding: 0.125rem 1rem;
+  text-align: center;
+}
+
+.title{
+  margin-bottom: 0.625rem;
+}
+
+.text{
+  margin-bottom: 1.25rem;
+}
+
+
+.ReviewsTitle{
+  text-align: center;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+  color:blue;
+
+}
+
+
+.Review {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  height: 40%;
+  border-radius: 0.313rem;
+  margin-right: 1.25rem;
+}
+
+.Review:hover {
+  box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 0.313rem 0.313rem 0.313rem 0.313rem;
+}
+
+.container {
+  padding: 0.125rem 1rem;
+}
+
+
+.Reviews{
+  display: flex;
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
+  margin-bottom: 1.875rem;
+  
+}
+
+ .name{
+  margin-bottom: 1.25rem;
+ }
+
+.rtext{
+  margin-bottom: 1.875rem;
+}
+
+
+
+.rate {
+  color: grey;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.coursesTitle{
+     text-align:center;
+      margin-top: 1.875rem;
+      color:blue;
+      margin-bottom: 1.875rem;
+}
+
+#icon{
+  width: 50px;
+  cursor: pointer;
+  
+}
+body {
+  background-color: white;
+  color: black;
+ 
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}

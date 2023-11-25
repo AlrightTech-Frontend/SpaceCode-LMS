@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="parent.css">
+    <link rel="stylesheet" href="Shared.css">
+    <title>Kids Coding Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+ 
+    <header>
+        <nav>
+           <div class="menu-icon">
+              <span class="fas fa-bars"></span>
+           </div>
+           <div class="logo">
+              <img src="images/logo.png" alt="logo">
+           </div>
+           <div class="nav-items">
+                      <li><a href="parent.html">Parent</a></li>
+                      <li><a href="SpaceCodeAdmins.html">Admin</a></li>
+                      <li><a href="courses.html">Courses</a></li>
+                      <li><a href="TutorsPage.html">Tutours</a></li>
+           </div>
+           <div class="search-icon">
+              <span class="fas fa-search"></span>
+           </div>
+           <div class="cancel-icon">
+              <span class="fas fa-times"></span>
+           </div>
+           <form action="#">
+              <input type="search" class="search-data" placeholder="Search" required>
+              <button type="submit" class="fas fa-search"></button>
+           </form>
+        </nav>
+      </header>
+  
+        <script>
+           const menuBtn = document.querySelector(".menu-icon span");
+           const searchBtn = document.querySelector(".search-icon");
+           const cancelBtn = document.querySelector(".cancel-icon");
+           const items = document.querySelector(".nav-items");
+           const form = document.querySelector("form");
+           menuBtn.onclick = ()=>{
+             items.classList.add("active");
+             menuBtn.classList.add("hide");
+             searchBtn.classList.add("hide");
+             cancelBtn.classList.add("show");
+           }
+           cancelBtn.onclick = ()=>{
+             items.classList.remove("active");
+             menuBtn.classList.remove("hide");
+             searchBtn.classList.remove("hide");
+             cancelBtn.classList.remove("show");
+             form.classList.remove("active");
+             cancelBtn.style.color = "#8a85bc";
+           }
+           searchBtn.onclick = ()=>{
+             form.classList.add("active");
+             searchBtn.classList.add("hide");
+             cancelBtn.classList.add("show");
+           }
+        </script>
+
+    <div class="banner">
+        <h1>It's not just a website<br> It's Space Code!</h1>
+        <p>To unlock the Power of Coding: Inspiring Young Minds
+         to Create and Innovate through Interactive Programming Courses</p>
+    </div>
+
+    <div class="breadcrumb"> 
+        <a href="index.html"> Home</a>
+          <span class="separator"> > </span>
+          <a href="parent.html">Parent</a>
+    
+         </div>
+
+    <div class="main-content">
+        <h1>Welcome, Parents!</h1>
+
+        <div class="actions">
+            <div class="action">
+                <a href="resgister.html">
+                    <img src="images/Screenshot 1445-04-16 at 10.09.22 AM.png" alt="Add New Kid">
+                    <p>Add New Kid</p>
+                </a>
+            </div>
+
+            <div class="action">
+                <a href="enrall2.html">
+                    <img src="images/courseEnrollment.png" alt="Course Enrollment" height="100" width="100">
+                    <p>Course Enrollment</p>
+                </a>
+            </div>
+
+            <div class="action">
+                <a href="evaluation.html">
+                    <img src="images/courseEvaluation.png" alt="Course Evaluation">
+                    <p>Course Evaluation</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="kids-list">
+            <h2>Your Kids</h2>
+            <select id="select-kid">
+                <option value="kid1">Kid 1</option>
+                <option value="kid2">Kid 2</option>
+                <option value="kid3">Kid 3</option>
+            </select>
+            <div class="kid-images">
+                <img src="images/kid1.png" alt="Kid 1">
+                <img src="images/kid2.png" alt="Kid 2">
+                <img src="images/kid3.png" alt="Kid 3">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="left-col">
+            <!---->
+            <h1>Contact Us</h1>
+            <p>Email:<br>SpaceCode@gmail.com</p>
+            <p>Phone:<br> 0505556124</p>
+            <hr>
+            <p class="rights-text">© 2021 Created By <b>FantacyDesigns</b>  All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <script src="parent.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>index</title>
+        <link rel="stylesheet" href="index.CSS">
+        <link rel="stylesheet" href="Shared.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <style>
+        .checked {
+          color: orange;
+        }
+        </style>
+       
+    </head>
+    
+
+    <body>
+        
+      <header>
+        <nav>
+           <div class="menu-icon">
+              <span class="fas fa-bars"></span>
+           </div>
+           <div class="logo">
+              <img src="images/logo.png" alt="logo">
+           </div>
+           <div class="nav-items">
+                      <li><a href="parent.html">Parent</a></li>
+                      <li><a href="SpaceCodeAdmins.html">Admin</a></li>
+                      <li><a href="courses.html">Courses</a></li>
+                      <li><a href="TutorsPage.html">Tutours</a></li>
+                      <li><button onclick="myFunction()">dark mode</button></li>
+                      <script>
+                        function myFunction() {
+                           var element = document.body;
+                           element.classList.toggle("dark-mode");
+                        }
+                        </script>
+           </div>
+           <div class="search-icon">
+              <span class="fas fa-search"></span>
+           </div>
+           <div class="cancel-icon">
+              <span class="fas fa-times"></span>
+           </div>
+           <form action="#">
+              <input type="search" class="search-data" placeholder="Search" required>
+              <button type="submit" class="fas fa-search"></button>
+           </form>
+        </nav>
+      </header>
+  
+        <script>
+           const menuBtn = document.querySelector(".menu-icon span");
+           const searchBtn = document.querySelector(".search-icon");
+           const cancelBtn = document.querySelector(".cancel-icon");
+           const items = document.querySelector(".nav-items");
+           const form = document.querySelector("form");
+           menuBtn.onclick = ()=>{
+             items.classList.add("active");
+             menuBtn.classList.add("hide");
+             searchBtn.classList.add("hide");
+             cancelBtn.classList.add("show");
+           }
+           cancelBtn.onclick = ()=>{
+             items.classList.remove("active");
+             menuBtn.classList.remove("hide");
+             searchBtn.classList.remove("hide");
+             cancelBtn.classList.remove("show");
+             form.classList.remove("active");
+             cancelBtn.style.color = "#8a85bc";
+           }
+           searchBtn.onclick = ()=>{
+             form.classList.add("active");
+             searchBtn.classList.add("hide");
+             cancelBtn.classList.add("show");
+           }
+        </script>
+
+    <div class="banner">
+        <h1>It's not just a website<br> It's Space Code!</h1>
+        <p>To unlock the Power of Coding: Inspiring Young Minds
+         to Create and Innovate through Interactive Programming Courses</p>
+    </div>
+
+
+      
+        
+<main>
+         
+  
+
+<article>
+
+      <h2 class="coursesTitle">Courses</h2>
+<div class="courses" >
+
+
+<div class="course">
+  <img src="images/java.png" alt="course image" style="width:100%">
+  <div class="container">
+    <h4 class="title"><b>Java</b></h4> 
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p> 
+  </div>
+</div>
+
+<div class="course">
+  <img src="images/AI.png" alt="course image" style="width:100%">
+  <div class="container">
+    <h4 class="title"><b>Artificial Intelligence</b></h4> 
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using AI.</p> 
+  </div>
+</div>
+
+<div class="course">
+  <img src="images/css.png" alt="course image" style="width:100%">
+  <div class="container">
+    <h4 class="title"><b>CSS</b></h4> 
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using CSS.</p> 
+  </div>
+</div>
+
+
+<div class="course">
+  <img src="images/Python .png" alt="course image" style="width:100%">
+  <div class="container">
+    <h4 class="title"><b>Python</b></h4> 
+    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+    <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using Python.</p> 
+  </div>
+</div>
+
+
+<div class="course">
+  <img src="images/JavaScript .png" alt="course image" style="width:100%">
+  <div class="container">
+    <h4 class="title"><b>JavaScript</b></h4> 
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using JavaScript.</p> 
+  </div>
+</div>
+
+
+<div class="course">
+  <img src="images/scratch.png" alt="course image" style="width:100%">
+  <div class="container">
+    <h4 class="title"><b>Scratch</b></h4> 
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using Scratch.</p> 
+  </div>
+</div>
+</article>
+
+<article>
+<h2 class="ReviewsTitle">Reviews</h2>
+<div class="Reviews" >
+
+  
+
+
+    <div class="Review">
+      <img src="images/avatar1.jpeg" alt="Avatar" style="width:20%">
+      <div class="container">
+        <h4 class="name"><b>Sara Ahmed</b></h4>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <p class="rtext">An exceptional learning center </p> 
+      </div>
+    </div>
+    
+    <div class="Review">
+      <img src="images/avatar2.jpeg" alt="Avatar" style="width:20%">
+      <div class="container">
+        <h4 class="name"><b>Noura Saud</b></h4> 
+        <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+        <p class="rtext">Empowering Young Minds!!</p> 
+      </div>
+    </div>
+    <div class="Review">
+      <img src="images/avatar3.jpeg" alt="Avatar" style="width:20%">
+      <div class="container">
+        <h4 class="name"><b>Naif Salman</b></h4> 
+        <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+        <p class="rtext">A fun and educational adventure</p> 
+      </div>
+    </div>
+    
+    </div>
+
+</article>
+
+
+  </main>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="left-col">
+        <!---->
+        <h1>Contact Us</h1>
+        <p>Email:<br>SpaceCode@gmail.com</p>
+        <p>Phone:<br> 0505556124</p>
+        <hr>
+        <p class="rights-text">© 2021 Created By <b>FantacyDesigns</b>  All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+   
+      
+      
+           
+       
+    </body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Courses</title>
+        
+        <link rel="stylesheet" href="courses.CSS">
+        <link rel="stylesheet" href="Shared.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<style>
+.checked {
+  color: orange;
+}
+</style>
+    </head>
+    <body>
+        
+        
+      <header>
+        <nav>
+           <div class="menu-icon">
+              <span class="fas fa-bars"></span>
+           </div>
+           <div class="logo">
+              <img src="images/logo.png" alt="logo">
+           </div>
+           <div class="nav-items">
+                      <li><a href="parent.html">Parent</a></li>
+                      <li><a href="SpaceCodeAdmins.html">Admin</a></li>
+                      <li><a href="courses.html">Courses</a></li>
+                      <li><a href="TutorsPage.html">Tutours</a></li>
+           </div>
+           <div class="search-icon">
+              <span class="fas fa-search"></span>
+           </div>
+           <div class="cancel-icon">
+              <span class="fas fa-times"></span>
+           </div>
+           <form action="#">
+              <input type="search" class="search-data" placeholder="Search" required>
+              <button type="submit" class="fas fa-search"></button>
+           </form>
+        </nav>
+      </header>
+  
+        <script>
+           const menuBtn = document.querySelector(".menu-icon span");
+           const searchBtn = document.querySelector(".search-icon");
+           const cancelBtn = document.querySelector(".cancel-icon");
+           const items = document.querySelector(".nav-items");
+           const form = document.querySelector("form");
+           menuBtn.onclick = ()=>{
+             items.classList.add("active");
+             menuBtn.classList.add("hide");
+             searchBtn.classList.add("hide");
+             cancelBtn.classList.add("show");
+           }
+           cancelBtn.onclick = ()=>{
+             items.classList.remove("active");
+             menuBtn.classList.remove("hide");
+             searchBtn.classList.remove("hide");
+             cancelBtn.classList.remove("show");
+             form.classList.remove("active");
+             cancelBtn.style.color = "#8a85bc";
+           }
+           searchBtn.onclick = ()=>{
+             form.classList.add("active");
+             searchBtn.classList.add("hide");
+             cancelBtn.classList.add("show");
+           }
+        </script>
+
+        <main>
+    
+        <div class="banner">
+            <h1>It's not just a website<br> It's Space Code!</h1>
+            <p>To unlock the Power of Coding: Inspiring Young Minds
+             to Create and Innovate through Interactive Programming Courses</p>
+        </div>
+    
+      
+        <div class="breadcrumb"> 
+            <a href="index.html"> Home</a>
+              <span class="separator"> > </span>
+              <a href="courses.html">Courses</a>
+            
+             
+             </div>
+
+      <h1 class="title">Courses</h1>
+
+      <article>
+        <div class="courses">
+            
+            
+            <div class="q1">
+            <div class="course">
+                <div class="container">
+                        <img src="images/java.png" alt="course image" class="course-img" >
+                        <div class="card">
+                            <div class="cardtext">
+                                <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                                <br>
+                                <hr>
+                                <br>
+                                <p>prerequisites: Scratch</p>
+                                <br>
+                                <hr>
+                                <br>
+                                <p>time saturday from 3 to 7</p>
+                                <br>
+                                <hr>
+                                <br>
+                               <p> current tutor:Huda nasser</p>
+                               <br>
+                               <hr>
+                               <br>
+                               <p>expected objective:You should be proficient in writing Java code, which includes understanding the syntax, data structures, and the principles of object-oriented programming (OOP).</p>
+                            </div>
+                        </div>
+                </div>
+                <h3>Java Programming</h3>
+               
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+            </div>
+
+
+
+            <div class="course">
+                <div class="container">
+                    <img src="images/css.png" alt="course image" class="course-img" >
+                    <div class="card">
+                        <div class="cardtext">
+                            <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>prerequisites: html</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>time slot:Sunday and Monday from 5 to 7</p>
+                            <br>
+                            <hr>
+                            <br>
+                           <p> current tutor:Saad Ameer</p>
+                           <br>
+                           <hr>
+                           <br>
+                           <p>Understand the concept of cascading and specificity in CSS.</p>
+                        </div>
+                    </div>
+            </div>
+                <h3>CSS</h3>
+            
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using CSS.</p>
+            </div>
+
+
+            <div class="course">
+                    <div class="container">
+                        <img src="images/scratch.png" alt="course image" class="course-img" >
+                        <div class="card">
+                            <div class="cardtext">
+                                <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                                <br>
+                                <hr>
+                                <br>
+                                <p> no prerequisites</p>
+                                <br>
+                                <hr>
+                                <br>
+                                <p>time slot:Sunday from 5 to 8</p>
+                                <br>
+                                <hr>
+                                <br>
+                               <p> current tutor:Naif Ahmed</p>
+                               <br>
+                               <hr>
+                               <br>
+                               <p>Create interactive stories, animations, and games to express creative ideas and narratives.</p>
+                            </div>
+                        </div>
+                </div>
+                <h3>Scratch</h3>
+                <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using Scratch.</p>
+        </div>
+            </div>
+        <div class="q2">
+
+
+            <div class="course">
+                <div class="container">
+                    <img src="images/Python .png" alt="course image" class="course-img" >
+                    <div class="card">
+                        <div class="cardtext">
+                            <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>prerequisites: Scratch</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>time slot:Starday from 3 to 7</p>
+                            <br>
+                            <hr>
+                            <br>
+                           <p> current tutor:Tamer hussam</p>
+                           <br>
+                           <hr>
+                           <br>
+                           <p>Demonstrate a solid understanding of Python's syntax, including variables, data types, operators, and control structures.</p>
+                        </div>
+                    </div>
+            </div>
+        <h3>Python</h3>
+        <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+        <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using Python.</p>
+    </div>
+
+
+
+    <div class="course">
+        <div class="container">
+            <img src="images/htmlcss .png" alt="course image" class="course-img" >
+            <div class="card">
+                <div class="cardtext">
+                    <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p> no prerequisites</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p>time slot:Wednesday and Thursday from 4 to 5</p>
+                    <br>
+                    <hr>
+                    <br>
+                   <p> current tutor:Sarah Abdullah</p>
+                   <br>
+                   <hr>
+                   <br>
+                   <p>Learning html elements and apply styles to HTML elements using CSS, including text formatting, backgrounds, borders, and margins</p>
+                </div>
+            </div>
+    </div>
+        <h3>html and CSS</h3>
+                 <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+        <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using html&CSS.</p>
+    </div>
+
+
+    <div class="course">
+        <div class="container">
+            <img src="images/AI.png" alt="course image" class="course-img" >
+            <div class="card">
+                <div class="cardtext">
+                    <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p>prerequisites: Python</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p>time slot:Wednesday and Thursday from 4 to 5</p>
+                    <br>
+                    <hr>
+                    <br>
+                   <p> current tutor:Nawaf Turki</p>
+                   <br>
+                   <hr>
+                   <br>
+                   <p>Gain a deep understanding of the fundamental concepts and principles of AI, including machine learning, data analysis, and natural language processing.</p>
+                </div>
+            </div>
+    </div>
+        <h3>Artificial Intelligence</h3>
+        <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+        <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using AI.</p>
+    </div>
+
+        </div>
+
+        <div class="q3">
+            <div class="course">
+                <div class="container">
+                    <img src="images/c .png" alt="course image" class="course-img" >
+                    <div class="card">
+                        <div class="cardtext">
+                            <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>prerequisites: Scratch</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>time slot:Starday from 3 to 7</p>
+                            <br>
+                            <hr>
+                            <br>
+                           <p> current tutor:Khalid Ahmed</p>
+                           <br>
+                           <hr>
+                           <br>
+                           <p>Demonstrate a solid understanding of C's syntax, including variables, data types, operators, and control structures.</p>
+                        </div>
+                    </div>
+            </div>
+        <h3>C</h3>
+        <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+        <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using C.</p>
+    </div>
+
+
+
+    <div class="course">
+        <div class="container">
+            <img src="images/cc.png" alt="course image" class="course-img" >
+            <div class="card">
+                <div class="cardtext">
+                    <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p>prerequisites: Scratch</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p>time slot:Starday from 3 to 7</p>
+                    <br>
+                    <hr>
+                    <br>
+                   <p> current tutor:Manar Muath</p>
+                   <br>
+                   <hr>
+                   <br>
+                   <p>Demonstrate a solid understanding of C#'s syntax, including variables, data types, operators, and control structures.</p>
+                </div>
+            </div>
+    </div>
+        <h3>C#</h3>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using C#.</p>
+    </div>
+
+
+
+    <div class="course">
+        <div class="container">
+            <img src="images/JavaScript .png" alt="course image" class="course-img" >
+            <div class="card">
+                <div class="cardtext">
+                    <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p>prerequisites: html & CSS</p>
+                    <br>
+                    <hr>
+                    <br>
+                    <p>time slot:Starday from 3 to 7</p>
+                    <br>
+                    <hr>
+                    <br>
+                   <p> current tutor:Noura Naif</p>
+                   <br>
+                   <hr>
+                   <br>
+                   <p>Demonstrate a solid understanding of JavaScript's syntax, including variables, data types, operators, and control structures.</p>
+                </div>
+            </div>
+    </div>
+        <h3>Javascript</h3>
+        <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+        <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using Javascript.</p>
+    </div>
+        </div>
+
+        <div class="q4">
+            <div class="course">
+                <div class="container">
+                    <img src="images/swift.png" alt="course image" class="course-img" >
+                    <div class="card">
+                        <div class="cardtext">
+                            <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>prerequisites: Scratch</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>time slot:Starday from 3 to 7</p>
+                            <br>
+                            <hr>
+                            <br>
+                           <p> current tutor:Sara Ahmed</p>
+                           <br>
+                           <hr>
+                           <br>
+                           <p>Demonstrate a solid understanding of Swift's syntax, including variables, data types, operators, and control structures.</p>
+                        </div>
+                    </div>
+            </div>
+                <h3>Swift</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using Swift.</p>
+            </div>
+
+
+
+            <div class="course">
+                <div class="container">
+                    <img src="images/php.png" alt="course image" class="course-img" >
+                    <div class="card">
+                        <div class="cardtext">
+                            <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>prerequisites: html , CSS and JavaScript</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>time slot:Starday from 3 to 7</p>
+                            <br>
+                            <hr>
+                            <br>
+                           <p> current tutor:Safiah hamad</p>
+                           <br>
+                           <hr>
+                           <br>
+                           <p>Understand PHP syntax, variables, data types, operators, and control structures.</p>
+                        </div>
+                    </div>
+            </div>
+                <h3>php</h3>
+                <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using php.</p>
+            </div>
+
+
+
+
+            <div class="course">
+                <div class="container">
+                    <img src="images/snap.png" alt="course image" class="course-img" >
+                    <div class="card">
+                        <div class="cardtext">
+                            <p>In this fun and creative class, we introduce students to the wonderful world of coding using Java.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>prerequisites: Scratch</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>time slot:Starday from 3 to 7</p>
+                            <br>
+                            <hr>
+                            <br>
+                           <p> current tutor:Rakan nasser</p>
+                           <br>
+                           <hr>
+                           <br>
+                           <p>Develop a strong understanding of fundamental programming concepts such as sequences, loops, conditionals, and variables using visual blocks.</p>
+                        </div>
+                    </div>
+            </div>
+                <h3>Snap</h3>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="text">In this fun and creative class, we introduce students to the wonderful world of coding using Snap.</p>
+        </div>
+            </div>
+
+        </div>
+      </article>
+
+
+      
+      <footer>
+        <div class="footer-container">
+          <div class="left-col">
+            <!---->
+            <h1>Contact Us</h1>
+            <p>Email:<br>SpaceCode@gmail.com</p>
+            <p>Phone:<br> 0505556124</p>
+            <hr>
+            <p class="rights-text">© 2021 Created By <b>FantacyDesigns</b>  All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+        </main>
+    </body>

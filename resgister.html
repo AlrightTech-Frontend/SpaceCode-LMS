@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" editer" content="Hadeel">
+    <title>Document</title>
+<link rel="stylesheet" href="resgister.css">
+<link rel="stylesheet" href="Shared.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+ 
+  <header>
+    <nav>
+       <div class="menu-icon">
+          <span class="fas fa-bars"></span>
+       </div>
+       <div class="logo">
+          <img src="images/logo.png" alt="logo">
+       </div>
+       <div class="nav-items">
+                  <li><a href="parent.html">Parent</a></li>
+                  <li><a href="SpaceCodeAdmins.html">Admin</a></li>
+                  <li><a href="courses.html">Courses</a></li>
+                  <li><a href="TutorsPage.html">Tutours</a></li>
+       </div>
+       <div class="search-icon">
+          <span class="fas fa-search"></span>
+       </div>
+       <div class="cancel-icon">
+          <span class="fas fa-times"></span>
+       </div>
+       <form action="#">
+          <input type="search" class="search-data" placeholder="Search" required>
+          <button type="submit" class="fas fa-search"></button>
+       </form>
+    </nav>
+  </header>
+
+    <script>
+       const menuBtn = document.querySelector(".menu-icon span");
+       const searchBtn = document.querySelector(".search-icon");
+       const cancelBtn = document.querySelector(".cancel-icon");
+       const items = document.querySelector(".nav-items");
+       const form = document.querySelector("form");
+       menuBtn.onclick = ()=>{
+         items.classList.add("active");
+         menuBtn.classList.add("hide");
+         searchBtn.classList.add("hide");
+         cancelBtn.classList.add("show");
+       }
+       cancelBtn.onclick = ()=>{
+         items.classList.remove("active");
+         menuBtn.classList.remove("hide");
+         searchBtn.classList.remove("hide");
+         cancelBtn.classList.remove("show");
+         form.classList.remove("active");
+         cancelBtn.style.color = "#8a85bc";
+       }
+       searchBtn.onclick = ()=>{
+         form.classList.add("active");
+         searchBtn.classList.add("hide");
+         cancelBtn.classList.add("show");
+       }
+    </script>
+
+<div class="banner">
+    <h1>It's not just a website<br> It's Space Code!</h1>
+    <br>
+    <p>To unlock the Power of Coding: Inspiring Young Minds
+     to Create and Innovate through Interactive Programming Courses</p>
+</div>
+ <div class="breadcrumb"> 
+  <a href="index.html"> Home</a>
+    <span class="separator"> > </span>
+    <a href="parent.html">Parent</a>
+    <span class="separator"> > </span>
+    <a href="resgister.html">Register a new child</a> 
+   </div>
+
+   <div class="container">
+    <form id="registrationForm" action="action_page.php">
+        
+          <h1 id="Register">Register New Kid</h1>
+          <hr>
+    
+      
+        
+         <div clss="prophoto"><img src="images/prof-removebg-preview.png" alt="profileimg" width="200" height="200"> </div>
+         <input type="file" id="photo" accept="image/*">
+         <br>
+         <span class="A">
+          <br>
+          <br>
+         <div class="info">
+          <br>
+          <br>
+         <label for="name"><b>Kid Name</b></label>
+         <input type="text" placeholder="Enter Name" name="name" id="name" required>
+         <br>
+         <br>
+         <div class="gender-container">
+         <label for="text"> Gender : </label>
+
+         
+          <input type="radio" checked="checked" name="radio" value="Girl"> Girl</input>
+          <span class="checkmark"></span>
+          <input type="radio" checked="checked" name="radio" value="Boy">Boy</input>
+          <span class="checkmark">
+
+        </span>
+         </label>
+         </div>
+        
+        <br>
+         <label for="birthday"> <b>DoB: </b> </label>
+         <input type="date" id="birthday" name="birthday"> </span>
+          <br>
+          <br>
+          <h4> Contact Information :</h4>
+          <br>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          <label for="Phone"><b>Phone Number</b></label>
+          <input type="text" placeholder="Enter Phone Number" name="Phone" id="Phone" required>
+
+          <br>
+          <br>
+         <hr>
+        
+          <button type="submit" class="registerbtn">Add</button>
+     </div>
+          
+      
+      </form>
+      </div>
+
+
+
+      <footer>
+        <div class="footer-container">
+          <div class="left-col">
+            <!---->
+            <h1>Contact Us</h1>
+            <p>Email:<br>SpaceCode@gmail.com</p>
+            <p>Phone:<br> 0505556124</p>
+            <hr>
+            <p class="rights-text">© 2021 Created By <b>FantacyDesigns</b>  All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <script src="register.js" defer></script>
+      <script src="stor.js" defer></script>
+</body>
+</html>

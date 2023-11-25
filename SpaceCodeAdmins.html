@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceCode</title>
+    <link rel="stylesheet" href="SpaceAdmins.css">
+    <link rel="stylesheet" href="Shared.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+
+<body>
+ 
+  <header>
+    <nav>
+       <div class="menu-icon">
+          <span class="fas fa-bars"></span>
+       </div>
+       <div class="logo">
+          <img src="images/logo.png" alt="logo">
+       </div>
+       <div class="nav-items">
+                  <li><a href="parent.html">Parent</a></li>
+                  <li><a href="SpaceCodeAdmins.html">Admin</a></li>
+                  <li><a href="courses.html">Courses</a></li>
+                  <li><a href="TutorsPage.html">Tutours</a></li>
+       </div>
+       <div class="search-icon">
+          <span class="fas fa-search"></span>
+       </div>
+       <div class="cancel-icon">
+          <span class="fas fa-times"></span>
+       </div>
+       <form action="#">
+          <input type="search" class="search-data" placeholder="Search" required>
+          <button type="submit" class="fas fa-search"></button>
+       </form>
+    </nav>
+  </header>
+
+    <script>
+       const menuBtn = document.querySelector(".menu-icon span");
+       const searchBtn = document.querySelector(".search-icon");
+       const cancelBtn = document.querySelector(".cancel-icon");
+       const items = document.querySelector(".nav-items");
+       const form = document.querySelector("form");
+       menuBtn.onclick = ()=>{
+         items.classList.add("active");
+         menuBtn.classList.add("hide");
+         searchBtn.classList.add("hide");
+         cancelBtn.classList.add("show");
+       }
+       cancelBtn.onclick = ()=>{
+         items.classList.remove("active");
+         menuBtn.classList.remove("hide");
+         searchBtn.classList.remove("hide");
+         cancelBtn.classList.remove("show");
+         form.classList.remove("active");
+         cancelBtn.style.color = "#8a85bc";
+       }
+       searchBtn.onclick = ()=>{
+         form.classList.add("active");
+         searchBtn.classList.add("hide");
+         cancelBtn.classList.add("show");
+       }
+    </script>
+
+     <div class="banner">
+        <h1>It's not just a website<br> It's Space Code!</h1>
+        <br>
+        <p>To unlock the Power of Coding: Inspiring Young Minds
+         to Create and Innovate through Interactive Programming Courses</p>
+    </div>
+     <div class="breadcrumb"> 
+      <a href="index.html"> Home</a>
+        <span class="separator"> > </span>
+        <a href="SpaceCodeAdmins.html">Admin</a>
+       </div>
+
+
+  <main onload="mFunction()">
+    <p id="date"></p>
+  
+<div class="thePage">
+  <h1> Children name </h1>
+  <div class="kidsName">
+   
+   <div class="kids">
+    <img src="images/kid3.png"  alt="child1" >
+    <p> Sarah Mohammed </p>
+   </div> 
+   <div class="kids">
+     <img src="images/kid1.png" alt="child2" >
+     <p> Saad Mohammed </p>
+   </div>
+   <div class="kids">
+     <img src="images/kid5.jpg"  alt="child3" >
+     <p> Soha Saleh </p>
+    </div>
+    <div class="kids">
+     <img src="images/kid2.png"  alt="child4" >
+     <p> Khaleed Essam </p>
+    </div>
+    <div class="kids">
+     <img src="images/kid7.jpg" alt="child5" >
+     <p> Mostafaa Ahmed </p>
+    </div>
+    <div class="kids">
+     <img src="images/kid2.jpg" alt="child6" >
+     <p> Halah Abdullah </p>
+    </div>
+   </div> <!-- kidsname -->
+
+     <h1> Courses name </h1>
+  <div class="courses">
+   <ul class="CourseTutor">
+   <li style="list-style-type:circle;"> <pre> Scratch Programming                       Manar Muath                 name of children: </pre><div class=KidRegister> <ul><li>Soha Saleh</li><li>Khaleed Essam</li><li>Mostafaa Ahmed </li> </ul>   </div>               </li>
+   <li style="list-style-type:circle;"> <pre> Python Coding                             Tamer hussam                name of children: </pre> <ul class=kid2><li>Halah Abdullah</li><li>Sarah Mohammed</li><li>Khaleed Essam</li><li>Latifah Samer </li><li> Thamer Fahad <span id="dot1">...</span> </li>
+    <li style="list-style-type: none;"><span id="more2" style="display: none;">Saad Mohammed</span></li> <button onclick="myFunction2()" id="myButtn">Read more</button> <script src="Admin.js"> </script> </ul>                  </li>
+   <li style="list-style-type:circle;"> <pre> CSS                                       Saad Ameer                  name of children: </pre> <ul class=kid2><li>Soha Saleh</li><li>Khaleed Essam</li> <li>Mostafaa Ahmed</li><li>Sarah Mohammed</li><li>Saad Fahad<span id="dots">...</span></li>  
+    <li style="list-style-type: none;"><span id="more" style="display: none;">Halah Abdullah <br> Khaleed Essam</span></li> <button onclick="myFunction()" id="myBtn">Read more</button></li>                 </ul>                   </li>
+   <li style="list-style-type:circle;"> <pre> html and CSS                              Safiah hamad                name of children: </pre> <ul class=kid2><li>Khaleed Essam</li><li>Saad Mohammed</li>                   </ul>                   </li>
+   <li style="list-style-type:circle;"> <pre> Java Programming                          Huda nasser                 name of children: </pre> <ul class=kid2><li> Halah Abdullah</li>                   </ul>                   </li>
+   <li style="list-style-type:circle;"> <pre> Artifical intelligence                    Abdullah Qassim             name of children: </pre>    <ul class=kid2><li>Halah Abdullah</li><li>Mostafaa Ahmed</li><li>Khaleed Essam</li><li>Latifah Samer </li><li> Soha Saleh  <span id="dot">...</span></li>   
+    <li style="list-style-type: none;"><span id="more1" style="display: none;">Halah Abdullah</span></li> <button onclick="myFunction1()" id="myButn">Read more</button>
+  <script>
+  function myFunction1() {
+    var dots = document.getElementById("dot");
+    var moreText = document.getElementById("more1");
+    var btnText = document.getElementById("myButn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>  </ul>                  </li>
+
+   </ul>  <!-- CourseTutorEnd -->
+   </div>  <!-- Courses end -->
+       
+   <h1> Tutor name </h1>
+
+   <div class="tutor">
+   <ul class="tutorlist">
+   <li> <pre> <a href="Schedule2.html"> Manar Muath </a>                     Scratch Programming                    </pre> </li>
+   <li> <pre> <a href="Schedule2.html"> Tamer hussam </a>                    Python Coding                   </pre> </li>
+   <li> <pre> <a href="Schedule2.html"> Saad Ameer </a>                      CSS                  </pre> </li>
+   <li> <pre> <a href="Schedule2.html"> Safiah hamad </a>                    html and CSS                    </pre> </li>
+   <li> <pre> <a href="Schedule1.html"> Sara Abdullah </a>                     Java Programming                    </pre> </li>
+   <li> <pre> <a href="Schedule2.html"> Abdullah Qassim </a>                 Artifical intelligence                    </pre> </li>
+
+   </ul>  <!-- tutorlist -->
+   </div>  <!-- tutor end -->
+      </div> <!-- thepage end -->
+
+   </main>
+ <hr>
+ <footer>
+  <div class="footer-container">
+    <div class="left-col">
+      <!---->
+      <h1>Contact Us</h1>
+      <p>Email:<br>SpaceCode@gmail.com</p>
+      <p>Phone:<br> 0505556124</p>
+      <hr>
+      <p class="rights-text">© 2021 Created By <b>FantacyDesigns</b>  All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+ 
+
+  
+</html>

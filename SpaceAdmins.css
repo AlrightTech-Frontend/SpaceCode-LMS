@@ -1,0 +1,123 @@
+﻿
+ .thePage
+{
+	 display : flex ;
+	 flex-direction : column ; 
+	 justify-content : center ;
+	 text-align : center ;
+	 gap: 10 px;
+
+} 
+
+
+.kidsName {
+	display: flex ;
+    flex-direction : row ; 
+	justify-content : space-between ;
+	overflow : auto ;
+	border : .2rem solid #140b49 ;
+
+
+}
+
+.kids 
+ { 
+
+ text-align : center ;
+ margin : 5% 5% ;
+     color: #64CCC5 ;
+
+
+}
+
+.kids img {
+	width : 150px ;
+	height : 150px ; 
+	border : 2px solid #140b49; 
+	border-radius: 10px;
+}
+
+
+
+.tutor {
+    	justify-content :center ;
+	border : .2rem solid #140b49 ;
+    	 text-align : center ;
+
+}
+
+.tutorlist{
+	justify-content :center ;
+    color: #64CCC5 ;
+    text-align : center ;
+    padding: 0% 5% 0% 30%;
+
+}
+.tutorlist li {list-style-type: decimal;
+color :#64CCC5;}
+ .courses {
+
+	justify-content :center ;
+	border : .2rem solid #140b49 ;
+    display: flex ;
+    overflow : auto ;
+        color: #64CCC5 ;
+
+}
+.KidRegister { text-align : right  ;}
+pre ul li {
+	  text-align : center ;
+          color: #64CCC5 ;
+
+
+}
+
+ul li {
+	  text-align :justify ;
+	  list-style-type: none;
+}
+
+.KidRegister ul li {list-style-position:none;
+	margin : 0% 0% 0% 80% ;
+    display : flex ;
+	flex-direction : row ; 
+        color: #64CCC5 ;
+
+}
+.kid2 {list-style-position:none;
+	margin : 0% 0% 0% 80% ;
+ display : flex ;
+	 flex-direction : column ;
+    color: #64CCC5 ;
+}
+
+.read-more-btn {
+	color :#140b49 ;
+}
+
+.read-more-text {display :none;}
+.read-more-text--show {display :inline;}
+
+#myBtn , #myButn , #myButtn {
+	background-color: #64CCC5;
+	border: none;
+	color: white;
+	font-size: 16px;  
+	cursor: pointer; } 
+
+	a:link {
+		color: #64CCC5;
+		text-decoration: none;
+	  }
+	  
+	  a:visited {
+		color:#64CCC5;
+	  }
+	  
+	  a:hover {
+		color:#140b49 ;
+	  }
+	  
+	  a:active {
+		color:#140b49 ;
+	  } 

@@ -1,0 +1,108 @@
+
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+table, th, td {
+     border: 0.2px solid;
+    }
+
+table{
+    width:90% ; 
+    height: auto;
+}
+
+table{
+     margin-left: auto;
+      margin-right: auto;
+    }
+
+td,th{
+    text-align: center;
+}
+
+td {
+    background-color: white;
+}
+
+th{
+    background-color:#8a85bc;
+    color: #fff;
+}
+
+tbody td.c{
+    background-color:#777a83; 
+}
+
+
+.Schedule1{
+  padding-top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+    
+}
+
+footer{
+  background: #140b49;
+  padding: 1.875rem 0;
+  min-height: 0.063rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container{
+  margin-right: 50%;
+  max-width: 81.25rem;
+  padding: 0 0.938rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #f1eeee;
+}
+
+.left-col { /* Add this class for styling the left column */
+  text-align: left; /* Align text to the left */
+  flex: 1; /* Take up available space on the left */
+}
+
+.footer-container h1{
+  font-size:  1.625rem;
+  text-align: left;
+}
+
+.footer-container p{
+  width: 190px;
+  margin: auto;
+  padding: 7px;
+  text-align: left;
+}
+
+
+.right-col h1{
+  font-size: 1.625rem;
+}
+ 
+
+ 
+@media screen and (max-width:960px) {
+  .footer-container{
+    max-width: 37.5rem;
+  }
+  .right-col{
+    width: 100%;
+    margin-bottom: 3.75rem;
+  }
+
+
+  .left-col{
+      width: 100%;
+      text-align: left;
+    }
+  }
